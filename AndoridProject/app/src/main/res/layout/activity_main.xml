@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/aaa"
+    android:orientation="vertical"
+    tools:context="com.example.user.andoridproject.MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="\nWelcome to Singapore!\n"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp"
+        android:layout_below="@+id/tab_layout"/>
+
+    <Button
+        android:id="@+id/intro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickIntro"
+        android:text="introduction"
+        android:background="#DCDCDCDC"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickList"
+        android:text="Favourite list"
+        android:background="#DCDCDCDC"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/locator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickLoc"
+        android:text="Attraction locator"
+        android:background="#DCDCDCDC"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/itinerary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DCDCDCDC"
+        android:onClick="onClickIti"
+        android:text="Daily itinerary planning" />
+
+</LinearLayout>

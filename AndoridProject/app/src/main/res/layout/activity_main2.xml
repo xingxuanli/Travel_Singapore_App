@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/aaaa"
+    tools:context="com.example.user.andoridproject.Main2Activity">
+
+    <CheckBox
+        android:id="@+id/flyer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DCDCDCDC"
+        android:text="Singapore Flyer"/>
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/vivo"
+        android:background="#DCDCDCDC"
+        android:text="Vivo City"/>
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DCDCDCDC"
+        android:id="@+id/sentosa"
+        android:text="Resorts World Sentosa"/>
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/temple"
+        android:background="#DCDCDCDC"
+        android:text="Buddha Tooth Relic Temple"/>
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#DCDCDCDC"
+        android:id="@+id/zoo"
+        android:text="Zoo"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/budget"
+        android:background="#DCDCDCDC"
+        android:inputType="number"
+        android:hint="Please Enter Your Budget"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/brute"
+        android:text="Brute Force"
+        android:background="#DCDCDCDC"
+        android:onClick="brute_force"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fast"
+        android:text="Fast Algo"
+        android:background="#DCDCDCDC"
+        android:layout_marginTop="20dp"
+        android:onClick="fast_algo"/>
+
+</LinearLayout>

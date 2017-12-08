@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/aaaa"
+    tools:context="com.example.user.andoridproject.ListActivity">
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Attraction to visit?"
+        android:background="#DCDCDCDC"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+
+    <EditText
+        android:id="@+id/editTextDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Estimated time?"
+        android:background="#DCDCDCDC"
+        android:ems="10"
+        android:textColor="@android:color/white"
+        android:inputType="numberDecimal"
+        android:layout_alignBaseline="@+id/editTextName"
+        android:layout_alignBottom="@+id/editTextName"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/editTextName"
+        android:layout_toEndOf="@+id/editTextName"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/buttonAddDatabase"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:onClick="onClickAddToDb"
+        android:text="Add To Database"
+        android:layout_below="@+id/editTextName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/editTextID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="enter id?"
+        android:background="#DCDCDCDC"
+        android:layout_below="@+id/buttonAddDatabase"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp"></EditText>
+
+    <Button
+        android:id="@+id/buttonDeleteDatabase"
+        android:text="Delete From Database"
+        android:layout_below="@id/editTextID"
+        android:layout_width="match_parent"
+        android:onClick="onClickDeleteFromDb"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <TextView
+        android:id="@+id/space1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/buttonDeleteDatabase"/>
+
+    <TextView
+        android:id="@+id/listtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:text="FAVOURITE LIST:"
+        android:layout_below="@+id/space1"/>
+
+    <TextView
+        android:id="@+id/favouriteList"
+        android:layout_width="match_parent"
+        android:textColor="@android:color/white"
+        android:layout_height="120dp"
+        android:layout_below="@+id/listtext"/>
+
+    <TextView
+        android:id="@+id/textViewEntireDatabase"
+        android:layout_below="@+id/listtext"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <TextView
+        android:id="@+id/space2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/favouriteList"/>
+
+    <Button
+        android:id="@+id/goToList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickGetEntireDb"
+        android:text="UPDATE My Favourite List"
+        android:layout_below="@+id/space2"/>
+
+</RelativeLayout>
